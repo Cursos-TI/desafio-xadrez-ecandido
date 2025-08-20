@@ -36,5 +36,27 @@ int main() {
         } while (j < casasRainha);
     }
 
+    printf("\n"); // Adiciona uma linha em branco para melhor visualização
+
+    // --- Simulação do movimento do Cavalo (usando for aninhado com while) ---
+    // O cavalo se move duas casas para baixo e uma para a esquerda.
+    printf("--- Movimento do Cavalo (2 casas para baixo, 1 para a esquerda) ---\n");
+    
+    // Define as casas a serem movidas
+    int casasVertical = 2;
+    int casasHorizontal = 1;
+
+    // Loop externo (for) para o movimento vertical (para baixo)
+    for (int k = 0; k < casasVertical; k++) {
+        printf("Baixo\n");
+    }
+
+    // Loop interno (while) para o movimento horizontal (para a esquerda)
+    int l = 0;
+    while (l < casasHorizontal) {
+        printf("Esquerda\n");
+        l++;
+    }
+
     return 0;
 }
